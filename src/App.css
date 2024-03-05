@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: none;
+  --white: #ffffff;
+  --black: #121212;
+  --red: #ed1b2f;
+  --brown: #54151c;
+  --menu-link: #a6a6a6;
+  --footer-head: #dedede;
+  --border-icon: rgba(255, 255, 255, 0.1);
+  --border-tag: #414042;
+  --button-active: #c82222;
+
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --white-red: #fff5f5;
+  --light-red: #ffdfdf;
+  --dark-red: #c82222;
+  --hyperlink: #0e2eed;
+  --rich-grey: #414042;
+  --dark-grey: #a6a6a6;
+  --silver-grey: #dedede;
+  --light-grey: #f7f7f7;
+  --success-color: #0ab305;
+  --info-color: #085bdd;
+  --error-color: #f60d00;
+  --warning-color: #ff9119;
+  --light-success-color: #eaf9e9;
+  --light-info-color: #eaf0fa;
+  --light-error-color: #feeeed;
+  --light-warning-color: #fff4e9;
+  --input-control: #e8f0fe;
+
+  --i-danger-rgb: 220, 53, 69;
+  --i-light-red: #ffdfdf;
+  --i-light-warning-color: #fff4e9;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+input,
+select {
+  outline: none;
+  border: none;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+
+textarea::placeholder {
+  font-family: "Lexend", sans-serif;
+}
+
+hr:not([size]) {
+  height: 1px;
+  opacity: 0.25;
+  color: inherit;
+  background-color: var(--menu-link);
+  border: 0;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* [class*="col-"] {
+  width: 100%;
+} */
+
+abbr {
+  color: var(--red);
+}
+
+table {
+  width: 100%;
+  background-color: var(--white);
+  border-collapse: collapse;
+  text-indent: 0;
+  border-color: inherit;
+  border: 1px solid var(--silver-grey);
+}
+
+tr {
+  border: 1px solid var(--silver-grey);
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-grey);
+}
+
+th,
+td {
+  text-align: start;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+}
+
+td:first-child {
+  max-width: 28rem;
+}
+
+*:disabled {
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+small {
+  font-size: 1.4rem;
+}
+
+canvas {
+  width: 100% !important;
+}
+
+/* react-modal */
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: #0000008a !important;
+  z-index: 999;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+}
+
+/* rc-slider */
+.rc-slider-handle {
+  border: solid 1px var(--silver-grey);
+  width: 17px;
+  height: 17px;
+  margin-top: -7px;
+  background: var(--white);
+  opacity: 1;
+}
+
+.rc-slider-handle.rc-slider-handle-1:active,
+.rc-slider-handle.rc-slider-handle-2:active {
+  border: solid 2px var(--silver-grey);
+  opacity: 1;
+  box-shadow: 0 0 0 6px var(--light-success-color) !important;
+}
+
+.rc-slider-handle.rc-slider-handle-1:hover,
+.rc-slider-handle.rc-slider-handle-2:hover {
+  border: solid 2px var(--silver-grey);
+  opacity: 1;
+  box-shadow: 0 0 0 6px var(--light-success-color) !important;
+}
+
+.rc-slider-handle-dagging.rc-slider-handle-dagging.rc-slider-handle-dagging {
+  box-shadow: 0 0 0 6px var(--light-success-color) !important;
+  opacity: 1;
+  border: solid 2px var(--silver-grey);
+}
+
+/* react-toastify */
+.Toastify__toast {
+  font-size: 1.6rem;
+  min-width: 40rem;
+  top: 10rem;
+  right: 10rem;
+  color: var(--black);
+  font-weight: 600;
+  border-radius: 8px;
+  border-left: 8px solid;
+}
+
+.Toastify__toast-theme--light.Toastify__toast--error {
+  background: var(--white-red);
+  border-left-color: var(--error-color);
+}
+.Toastify__toast-theme--light.Toastify__toast--success {
+  background: var(--light-success-color);
+  border-left-color: var(--success-color);
+}
+
+.Toastify__close-button > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* react-select */
+
+.css-13cymwt-control {
+  border: 1px solid var(--silver-grey);
+}
+
+.css-art2ul-ValueContainer2 {
+  font-size: 1.6rem;
+  min-height: 4.2rem;
+}
+
+.css-1nmdiq5-menu {
+  font-size: 1.6rem;
+}
+
+.select__multi-value__label.css-1y7rh0y-MultiValueGeneric2 {
+  font-size: 1.6rem;
+}
+
+svg.css-tj5bde-Svg {
+  cursor: pointer;
+}
